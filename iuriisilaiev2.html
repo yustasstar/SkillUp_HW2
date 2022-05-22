@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ДЗ#2 Юрий Силаев</title>
+    <style>
+      /* Весь сайт (контент) */
+      body {
+        width: 80%;
+        margin: auto;
+      }
+      /* Шапка */
+      header {
+        margin-top: 10px;
+        background-color: rgb(11, 9, 73);
+        color: #ffffff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      a:link {
+        text-decoration: none;
+        color: #ffffff;
+      }
+      a:visited {
+        text-decoration: none;
+        color: rgb(175, 80, 25);
+      }
+      a:hover {
+        color: blue;
+        text-decoration: underline;
+      }
+      a:active {
+        color: blueviolet;
+        text-decoration: underline;
+      }
+      a:focus {
+        color: blue;
+        text-decoration: underline;
+      }
+      /* Вся центральная часть контента */
+      main {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      /* Левая часть(сайд-бар) */
+      aside {
+        background-color: whitesmoke;
+        width: 15%;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+      }
+      /* Центральное наполнение */
+      .center {
+        width: 60%;
+        padding: 40px;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      /* Правая часть(сайд-бар) */
+      .right-side {
+        background-color: whitesmoke;
+        width: 25%;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      /* Подвал */
+      footer {
+        margin-bottom: 10px;
+        background-color: rgb(11, 9, 73);
+        color: #ffffff;
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      /* доп стили */
+      .main-logo {
+        font-size: 72px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 0;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        font-family: cursive;
+      }
+      h3 {
+        font-size: 16px;
+        color: rgb(5, 5, 41);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      p {
+        font-size: 14px;
+        color: rgb(5, 5, 41);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Навигация -->
+      <nav>
+        <ul>
+          <li><a href="#studio">Студия</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="iuriisilaiev2.html" lang="en" class="main-logo">
+        <span><b>Web</b></span>
+        Studio
+      </a>
+
+      <!-- Контакты -->
+      <ul>
+        <li>
+          <a
+            href="mailto:info@devstudio.com"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            title="Написать письмо"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+380961111111" rel="noreferrer noopener nofollow" title="Позвонить"
+            >+38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <!-- Чем мы занимаемся -->
+      <aside id="portfolio">
+        <h2>Чем мы занимаемся</h2>
+        <ul>
+          <li>
+            <img src="./images/img1.jpg" alt="Разработка ПО" width="180" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quae alias
+              inventore perferendis porro harum earum blanditiis minus sint similique, voluptate
+              neque illo corporis consectetur velit quod. Itaque, obcaecati illo.
+            </p>
+          </li>
+          <li>
+            <img src="./images/img2.jpg" alt="Тестирование приложения" width="180" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quae alias
+              inventore perferendis porro harum earum blanditiis minus sint similique, voluptate
+              neque illo corporis consectetur velit quod. Itaque, obcaecati illo.
+            </p>
+          </li>
+          <li>
+            <img src="./images/img3.jpg" alt="Работа с палитрой цветов" width="180" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quae alias
+              inventore perferendis porro harum earum blanditiis minus sint similique, voluptate
+              neque illo corporis consectetur velit quod. Itaque, obcaecati illo.
+            </p>
+          </li>
+        </ul>
+      </aside>
+      <!-- Герой -->
+
+      <div class="center">
+        <section class="hero">
+          <h1>Эффективные решения для вашего бизнеса</h1>
+          <img src="https://webstudio.net.ua/images/slide5z.jpg" alt="вебстудия" width="800" />
+        </section>
+        <!-- Особенности -->
+        <section>
+          <h2 hidden>Особенности></h2>
+          <ol>
+            <li>
+              <h3>Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quae alias
+                inventore perferendis porro harum earum blanditiis minus sint similique, voluptate
+                neque illo corporis consectetur velit quod. Itaque, obcaecati illo.
+              </p>
+            </li>
+            <li>
+              <h3>Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quae alias
+                inventore perferendis porro harum earum blanditiis minus sint similique, voluptate
+                neque illo corporis consectetur velit quod. Itaque, obcaecati illo.
+              </p>
+            </li>
+            <li>
+              <h3>Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quae alias
+                inventore perferendis porro harum earum blanditiis minus sint similique, voluptate
+                neque illo corporis consectetur velit quod. Itaque, obcaecati illo.
+              </p>
+            </li>
+            <li>
+              <h3>Современные технологии</h3>
+              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quae alias
+                inventore perferendis porro harum earum blanditiis minus sint similique, voluptate
+                neque illo corporis consectetur velit quod. Itaque, obcaecati illo.
+              </p>
+            </li>
+          </ol>
+          <div>
+            <button type="button">Заказать услугу</button>
+          </div>
+        </section>
+      </div>
+      <!-- Наша команда -->
+      <section class="right-side" id="studio">
+        <h2>Наша команда</h2>
+        <ul>
+          <li>
+            <img src="./images/photo(4).jpg" lang="en" alt="Product Designer" width="200" />
+            <h3>Игорь Демьяненко</h3>
+            <p lang="en">Product Designer</p>
+          </li>
+          <li>
+            <img src="./images/photo(1).jpg" lang="en" alt="Frontend Developer" width="200" />
+            <h3>Ольга Репина</h3>
+            <p lang="en">Frontend Developer</p>
+          </li>
+          <li>
+            <img src="./images/photo(2).jpg" lang="en" alt="Marketing" width="200" />
+            <h3>Николай Тарасов</h3>
+            <p lang="en">Marketing</p>
+          </li>
+          <li>
+            <img src="./images/photo(3).jpg" lang="en" alt="UI Designer" width="200" />
+            <h3>Михаил Ермаков</h3>
+            <p lang="en">UI Designer</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <a href="iuriisilaiev2.html" lang="en" title="Домашняя страница">
+        <span><b>Web</b></span>
+        Studio
+      </a>
+      <span>&#169; All rights reserved</span>
+      <!-- Контакты -->
+      <address id="contacts">
+        <span><u>Контакты:</u></span>
+        <ul>
+          <li>
+            <a
+              href="https://goo.gl/maps/2zWvDvRxsybx85RQ7"
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              title="Открыть карты"
+              >г. Киев, пр-т Леси Украинки, 26
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:info@example.com"
+              target="_blank"
+              title="Написать письмо"
+              rel="noreferrer noopener nofollow"
+              >info@example.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380991111111" title="Позвонить" rel="noreferrer noopener nofollow"
+              >+38 099 111 11 11
+            </a>
+          </li>
+        </ul>
+      </address>
+    </footer>
+  </body>
+</html>
